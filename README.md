@@ -20,6 +20,8 @@
 `screen -S motion`  
 `sudo motion -c motion.conf`  
 `Ctrl-A d`  
+`crontab -e`  
+        Add this line > `0 0 * * * find /home/pi/videos -mmin +1440 -delete`
 
 ## Debug
 1. In motion.conf:  
