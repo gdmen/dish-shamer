@@ -21,7 +21,9 @@
 `sudo motion -c motion.conf`  
 `Ctrl-A d`  
 `crontab -e`  
-        Add this line > `0 0 * * * find /home/pi/videos -mmin +4320 -delete`
+Add these lines:  
+`0 0 * * * find /home/pi/videos -mmin +4320 -delete`  
+`@reboot sudo motion -c /home/pi/motion.conf`
 
 ## Fetch and Examine Evidence
 1. python3 thumbs.py <IP> <user> <password>
